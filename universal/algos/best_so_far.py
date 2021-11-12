@@ -1,7 +1,5 @@
 import numpy as np
 
-from universal.algos import CRP
-
 from .. import tools
 from ..algo import Algo
 
