@@ -1,5 +1,4 @@
 import numpy as np
-import numpy.typing as npt
 
 from .. import tools
 from ..algo import Algo
@@ -35,13 +34,13 @@ class TCO(Algo):
         b = self.update_tco(x, last_b, x_pred)
         return b
 
-    def predict(self, p, history) -> npt.NDArray:
+    def predict(self, p, history):
         """Predict returns on next day.
         :param p: raw price
         """
         raise NotImplementedError()
 
-    def update_tco(self, x: npt.NDArray, b: npt.NDArray, x_pred: npt.NDArray):
+    def update_tco(self, x, b, x_pred):
         """
         :param x: ratio of change in price
         """
